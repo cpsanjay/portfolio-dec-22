@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  background-color: white;
+  @apply text-black;
+  font-family: "Lexend Deca";
+  /* overflow-x: hidden; */
+}
+::selection {
+  color: black;
+  background: #ffc700;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#sanjay {
+  background: linear-gradient(89.77deg, #00670a, #aebe00, #7eb734, #00670a);
+  background-size: 800%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 10s ease infinite;
+}
+
+#projects {
+  background: linear-gradient(90.13deg, #434085 0.08%, #9d535f 98.26%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#projectSection {
+  background: linear-gradient(
+    142.35deg,
+    rgba(217, 217, 217, 0.2) 8.67%,
+    rgba(217, 217, 217, 0.3) 89.06%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 61px;
+}
+
+.background {
+  background: linear-gradient(90.24deg, #6e6c8e 0.2%, #ffe9ee 99.78%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
 }
