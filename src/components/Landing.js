@@ -68,7 +68,7 @@ const Landing = ({ setSelectedPage }) => {
           </AnchorLink>
           <a
             className="w-[100px] h-[70px] bg-[#FFC700] rounded-[25px]  font-semibold flex items-center justify-center shadow-3xl hover:bg-[#fbd138]"
-            href="https://drive.google.com/file/d/1OhKxpAqfQ_ZMJuPABlomiGL0csGavicU/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ebE1glN4j5DK8EwusnAe9DXXkxgEqmX6/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
