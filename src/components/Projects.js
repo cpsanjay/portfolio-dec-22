@@ -16,15 +16,15 @@ const projectVariant = {
 };
 
 const Project = ({ title, desc, head, gitLink }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-gray-300 z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue rounded-xl cursor-pointer`;
+  const overlayStyles = `absolute h-full w-full lg:opacity-0 hover:opacity-90 opacity-80 transition duration-500
+    bg-gray-300 z-30 flex flex-col justify-center items-center text-center p-5 sm:p-5 lg:p-10 text-deep-blue rounded-xl cursor-pointer`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative object-cover m-2">
       <div className={overlayStyles}>
-        <p className="text-2xl">{head}</p>
-        <p className="mt-7">{desc}</p>
+        <p className="lg:text-2xl text-xl">{head}</p>
+        <p className="lg:mt-7 mt-2 lg:text-sm leading-4">{desc}</p>
         <a
           href={gitLink}
           target="_blank"
