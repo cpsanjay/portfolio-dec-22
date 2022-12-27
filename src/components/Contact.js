@@ -115,7 +115,7 @@ const Contact = ({ setSelectedPage }) => {
           )}
 
           <button
-            className="md:w-[260px] text-[14px] md:text-[1rem] w-[150px]  h-[70px] bg-[#FFC700] rounded-[25px]  font-semibold flex items-center justify-center shadow-3xl hover:bg-[#fbd138] transition duration-500"
+            className="md:w-[260px] text-[14px] md:text-[1rem] w-[150px] m-auto h-[70px] bg-[#FFC700] rounded-[25px]  font-semibold flex items-center justify-center shadow-3xl hover:bg-[#fbd138] transition duration-500"
             type="submit"
           >
             Send a Message

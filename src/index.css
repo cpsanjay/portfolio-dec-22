@@ -10,9 +10,11 @@ body,
 .app {
   height: 100%;
   background-color: white;
+  /* overflow-x: hidden; */
   @apply text-black;
   font-family: "Lexend Deca";
-  /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
 }
 ::selection {
   color: black;

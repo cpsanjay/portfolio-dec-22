@@ -21,11 +21,7 @@ const Project = ({ title, desc, head, gitLink }) => {
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div
-      variants={projectVariant}
-      className="relative w-[300px] h-[200px] sm:w-[150px] md:w-[200px] lg:w-[300px] object-cover m-2 "
-      href={gitLink}
-    >
+    <motion.div variants={projectVariant} className="relative object-cover m-2">
       <div className={overlayStyles}>
         <p className="text-2xl">{head}</p>
         <p className="mt-7">{desc}</p>
@@ -76,11 +72,11 @@ const Projects = ({ setSelectedPage }) => {
         </div>
       </motion.div>
       <motion.div
-        className="sm:grid sm:grid-cols-3 p-10"
+        className="sm:grid sm:grid-cols-3 grid grid-cols-1 p-10"
         id="projectSection"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
         variants={container}
       >
         {projectDetails.map((p, i) => (
